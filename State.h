@@ -5,12 +5,12 @@
 #ifndef TSU_DVD_PLAYER_STATE_H
 #define TSU_DVD_PLAYER_STATE_H
 
-//#include "Player.h"
+#include "Player.h"
 
 class Player;
 
 class State {
-private:
+protected:
     Player *player;
 public:
     virtual ~State();

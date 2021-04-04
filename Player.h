@@ -7,6 +7,8 @@
 
 #include "State.h"
 
+class State;
+
 class Player {
 private:
     State *state;
