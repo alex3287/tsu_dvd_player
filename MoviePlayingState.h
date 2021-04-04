@@ -8,8 +8,7 @@
 #include <iostream>
 #include "State.h"
 #include "MoviePausedState.h"
-
-class MoviePausedState;
+#include "MenuState.h"
 
 class MoviePlayingState: public State {
 public:

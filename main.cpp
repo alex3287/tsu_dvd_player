@@ -5,16 +5,18 @@
 #include <iostream>
 #include "State.h"
 #include "Player.h"
-#include "MoviePlayingState.h"
-#include "MoviePausedState.h"
+#include "StandByState.h"
 
 
 
 int main (){
-    std::cout<<"hello world"<<std::endl;
-
-    Player *player = new Player(new MoviePlayingState());
+    Player *player = new Player(new StandByState());
     player->play();
+    player->menu();
+    player->play();
+    player->menu();
+    player->play();
+    player->menu();
     player->play();
 
     return 0;

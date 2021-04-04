@@ -5,10 +5,11 @@
 #include "MoviePlayingState.h"
 
 void MoviePlayingState::play() {
-    std::cout<<"Stop music"<<std::endl;
+    std::cout<<"Pause"<<std::endl;
     player->setState(new MoviePausedState());
 }
 
 void MoviePlayingState::menu() {
     std::cout<<"Состояние переключено на MenuState"<<std::endl;
+    player->setState(new MenuState());
 }
